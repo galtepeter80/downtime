@@ -16,6 +16,16 @@
 		<a href="/"><img alt="Downtime Logo" src="../public/images/downtime.gif"/></a>
 	</div>
 	
+	<script>
+		// adds a clickable version history
+		function version() {
+			var version_tracker = "DOWNTIME VERSION HISTORY\n";
+			version_tracker += "1.0 - Downtime version 1.0 successfully created!\n";
+			version_tracker += "1.1 - Added dice rolling buttons to OOC, and a version tracker\n";
+			alert(version_tracker);
+		}
+	</script>
+	
 	<div id="sitenav">
 		<a href="../public/index.html">Home</a>
 		&nbsp; | &nbsp;
@@ -26,6 +36,11 @@
 		<a href="../public/campaign.php">My Campaign</a>
 		&nbsp; | &nbsp;
 		<a href="../public/logout.php">Logout</a>
+		
+	</div>
+	
+	<div>
+		<button onclick="version()">Version History</button>
 	</div>
 	
 	<?php
